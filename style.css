@@ -280,29 +280,36 @@ button:hover {
 }
 #copyrightEtIcones {
   display: flex;
+  flex-direction: column; /* Met le texte et les icônes en colonne */
+  align-items: center; /* Centre horizontalement */
+  text-align: center;
+  width: 100%;
   margin-bottom: 50px;
-  padding: 0 10%;
 }
+
 #copyright {
-  width: 50%;
-  text-align: left;
   color: rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
+
 #icons {
-  width: 50%;
-  text-align: right;
-  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* espace entre les icônes */
 }
+
 #icons a {
-  display: inline-block;
-  padding: 0 15px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: black;
+  transition: transform 0.2s ease;
 }
 
 #icons a:hover {
   transform: scale(1.5);
-  transition: 0.1s;
+}
+footer {
+  background-color: rgb(107, 86, 2)26);
+  padding: 40px 0;
 }
 
 /* ********************************* VIDEO ******************************** */
