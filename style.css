@@ -244,7 +244,7 @@ footer {
 #contact {
   padding: 15px 0;
   font-size: 30px;
-  font-family: "Cormorant", serif;
+  font-family: "Cormorant bold", serif;
 }
 
 form {
@@ -278,7 +278,6 @@ button:hover {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-
 
 #deuxiemeTrait {
   height: 1px;
@@ -316,9 +315,10 @@ button:hover {
   transform: scale(1.5);
 }
 footer {
-  background-color: rgb(107, 86, 2)26);
+  background-color: rgb(240, 235, 196);
   padding: 40px 0;
 }
+
 /* ********************************* VIDEO ******************************** */
 
 .video-container {
