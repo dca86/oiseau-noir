@@ -82,9 +82,9 @@ nav ul li a:hover {
 /* ************************************* IMAGE PRINCIPAL ************************************ */
 #imagePrincipal {
   padding-top: 200px;
-  background: url(media/entetesc.PNG) no-repeat fixed 50% 50%;
+  background: url(media/entetesc.png) no-repeat fixed 50% 50%;
   background-size: cover;
-  height: 400px;
+  height: 500px;
 }
 
 h1 {
@@ -183,16 +183,16 @@ h3 {
 }
 
 #bunker {
-  background: url(media/StarCitizen_2025.01.17-00.58.PNG);
+  background: url(media/StarCitizen_2025.01.17-00.58.png);
 }
 #vaisseauAmbulance {
-  background: url(media/StarCitizen_2025.01.16-05.16.PNG);
+  background: url(media/StarCitizen_2025.01.16-05.16.png);
 }
 #tressler {
-  background: url(media/StarCitizen_2025.01.16-05.24.PNG);
+  background: url(media/StarCitizen_2025.01.16-05.24.png);
 }
 #sniper {
-  background: url(media/StarCitizen_2025.01.16-05.09.PNG);
+  background: url(media/StarCitizen_2025.01.16-05.09.png);
 }
 
 #photosVerse li {
@@ -241,6 +241,12 @@ footer {
   text-align: center;
 }
 
+#contact {
+  padding: 15px 0;
+  font-size: 30px;
+  font-family: "Cormorant", serif;
+}
+
 form {
   margin: 0 auto;
   max-width: 900px;
@@ -272,6 +278,8 @@ button:hover {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
+
 #deuxiemeTrait {
   height: 1px;
   width: 75%;
@@ -280,31 +288,37 @@ button:hover {
 }
 #copyrightEtIcones {
   display: flex;
+  flex-direction: column; /* Met le texte et les icônes en colonne */
+  align-items: center; /* Centre horizontalement */
+  text-align: center;
+  width: 100%;
   margin-bottom: 50px;
-  padding: 0 10%;
 }
+
 #copyright {
-  width: 50%;
-  text-align: left;
   color: rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
+
 #icons {
-  width: 50%;
-  text-align: right;
-  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* espace entre les icônes */
 }
+
 #icons a {
-  display: inline-block;
-  padding: 0 15px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: black;
+  transition: transform 0.2s ease;
 }
 
 #icons a:hover {
   transform: scale(1.5);
-  transition: 0.1s;
 }
-
+footer {
+  background-color: rgb(107, 86, 2)26);
+  padding: 40px 0;
+}
 /* ********************************* VIDEO ******************************** */
 
 .video-container {
