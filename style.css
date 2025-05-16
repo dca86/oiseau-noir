@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+
+body {
+  font-family: "Cormorant", serif;
+  padding: 0;
+  margin: 0;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: rgba(126, 108, 26);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mettre tout en MAJ */
+li {
+  list-style-type: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ********************************** NAVBAR ********************************* */
+nav {
+  overflow: hidden;
+  top: 0;
+  background-color: rgba(230, 194, 35, 0.596);
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
+  /* position fixed permet de fixer la barre même quand on descend la page */
+  z-index: 1000; /* Très important pour passer devant le contenu */
+}
+
+header li {
+  float: right;
+  font-size: 1.2em;
+  /* em est une taille qui s'adapte à la taille de l'écran */
+}
+header li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 15px;
+  /* Premier élément en haut en bas et deuxieme à gauche à droite */
+  color: #000000;
+  transition: all 0.4s ease; /* transition du survol */
+  font-family: "Cormorant", serif;
+  font-size: 23px;
+  border-radius: 0;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+  background-color: #a0850b;
+  color: #ffffff;
+  border-radius: 8px; /* coins arrondis au survol */
+  transform: scaleY(0.9); /* rétrécit un peu verticalement */
+}
+
+#logo {
+  font-family: "Cormorant", serif;
+  font-weight: bold;
+  font-size: 35px;
+
+  /* font-weight = épaisseur */
+  float: left;
+}
+
+/* ************************************* IMAGE PRINCIPAL ************************************ */
+#imagePrincipal {
+  padding-top: 200px;
+  background: url(media/entetesc.PNG) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 400px;
+}
+
+h1 {
+  font-family: "Cormorant", serif;
+  text-align: center;
+  font-size: 6em;
+  margin-top: 100px;
+  text-shadow: 1px 1px 3px white;
+  color: rgba(230, 194, 35, 0.397);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#premierTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: rgb(156, 151, 151);
+  box-shadow: 1px 1px 3px white;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3em;
+  color: rgba(230, 194, 35, 0.397);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************************************ PRESENTATION **************************** */
+
+#presentation {
+  background-color: rgb(126, 108, 26);
+  padding: 10px 0px 100px 0px;
+  /* en haut, à droit, en bas, à gauche */
+}
+
+#texetIntro {
+  padding: 0px 20%;
+  /* marge naturelle */
+}
+#prestations {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10%; */
+}
+
+/* *********************************** Styles pour l'image ********************************** */
+.imagePrestation img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*bordure d'image*/
+  padding: 3px;
+  border: 5px ridge black;
+  background-color: black;
+  border-radius: 0px 0px 30px 0px;
+  box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.7);
+  /* 2dernier chiffre pour regler l'opacité*/
+  /* border radius - arrondi bord */
+  /* max-width: 600px;
+  max-height: 500px; hauteur et largeur maximal
+  display block + margin = centrer l'image*/
+}
+
+.imagePrestation h4 {
+  font-family: "Cormorant bold", serif;
+  text-align: center;
+  font-size: 30px;
+  margin: 50px 0px 10px 0px;
+  /* en haut, à droit, en bas, à gauche */
+  font-weight: 300;
+}
+
+.imagePrestation img:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
+/* ************************* Photos à découvrir ************************* */
+
+#photosVerse {
+  height: 1400px;
+  background-color: rgb(252, 252, 252);
+  padding: 1px 2%;
+}
+
+#photosVerse h2 {
+  padding-top: 40px;
+  color: rgba(230, 194, 35, 0.397);
+}
+
+#bunker {
+  background: url(media/StarCitizen_2025.01.17-00.58.PNG);
+}
+#vaisseauAmbulance {
+  background: url(media/StarCitizen_2025.01.16-05.16.PNG);
+}
+#tressler {
+  background: url(media/StarCitizen_2025.01.16-05.24.PNG);
+}
+#sniper {
+  background: url(media/StarCitizen_2025.01.16-05.09.PNG);
+}
+
+#photosVerse li {
+  margin: 65px 100px 0px 100px;
+  height: 226px;
+  width: 55%;
+  max-width: 600px;
+  float: left;
+  box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
+  /* qui s'adapte a tout les ecrans tel tablette tv */
+}
+
+#photosVerse P {
+  height: 40px;
+  width: 230px;
+  background-color: rgb(230, 208, 12);
+  float: right;
+  margin: 50px -180px 0 0;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  padding-top: 20px;
+  box-shadow: 4px 4px 0 1px rgb(0, 0, 0);
+}
+
+/*#photosVerse #vaisseauAmbulance,
+#photosVerse #sniper {
+  float: right;
+}
+
+ #vaisseauAmbulance p,
+#sniper p {
+  float: left;
+  background-color: rgb(230, 208, 12);
+  margin-left: -180px;
+  box-shadow: -4px 4px 0 1px rgb(0, 0, 0);
+} */
+
+/* ********************************* FOOTER ******************************** */
+
+footer {
+  background-color: rgb(240, 235, 196);
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 15px rgb(124, 118, 34), 0 0 10px rgb(179, 159, 47);
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: "Cormorant", serif;
+  border: 8px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  font-size: 1.5em;
+  background-color: rgb(202, 179, 48);
+}
+button:hover {
+  background-color: rgb(189, 177, 9);
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: rgb(0, 0, 0);
+  margin: 60px auto;
+}
+#copyrightEtIcones {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 0 10%;
+}
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+#icons {
+  width: 50%;
+  text-align: right;
+  color: black;
+}
+#icons a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: black;
+}
+
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
+
+/* ********************************* VIDEO ******************************** */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
