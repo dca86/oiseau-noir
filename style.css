@@ -82,7 +82,7 @@ nav ul li a:hover {
 /* ************************************* IMAGE PRINCIPAL ************************************ */
 #imagePrincipal {
   padding-top: 200px;
-  background: url(media/entetesc.PNG) no-repeat fixed 50% 50%;
+  background: url(media/entetesc.png) no-repeat fixed 50% 50%;
   background-size: cover;
   height: 400px;
 }
